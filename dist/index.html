@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link href="img/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+
+        <div class="wrapBlur" id="mask"></div>
+    <div class="popup hide" id="logForm">
+        <img src="img/close.svg" class="close" alt="" id="close">
+        <form action="" class="form-popup show" id="form-in">
+
+            <p class="form-title">Увійти в кабінет</p>
+            <div class="input-wrap">
+                <label class="input-title">Логін</label>
+                <input type="text" name="log" placeholder="Введіть логін" class="form-input">
+            </div>
+            <div class="input-wrap">
+                <label class="input-title">Пароль</label>
+                <input type="password" name="pass" placeholder="*******" class="form-input" id="">
+            </div>
+            <div class="submit">
+                <input type="submit" class="form-submit" value="Увійти" id="btnEntrance">
+                <span class="form-submit underline register submit" id="accept">Реєстрація</span>
+            </div>
+            <p class="new-pass" id="btnNewPass">Забули пароль?</p>
+
+        </form>
+        <form action="" class="form-popup" id="formRegister">
+
+            <p class="form-title">Реєстрація</p>
+            <div class="input-wrap">
+                <label class="input-title">Логін</label>
+                <input type="text" name="log" placeholder="Введіть логін" class="form-input">
+            </div>
+            <div class="input-wrap">
+                <label class="input-title">Пароль</label>
+                <input type="password" name="pass" placeholder="Введіть пароль" class="form-input" id="">
+            </div>
+            <div class="input-wrap">
+                <label class="input-title">Повторіть пароль</label>
+                <input type="password" name="pass" placeholder="Введіть пароль" class="form-input" id="">
+            </div>
+            <div class="submit">
+                <input type="submit" class="form-submit submit" value="Реєстрація" id="btnRegister">
+                <span class="form-submit underline register  " id="btnForAccount">В мене вже е аккаунт</span>
+            </div>
+
+        </form>
+        <form action="" class="form-popup" id="formNewPass">
+
+            <p class="form-title">Відновлення пароля</p>
+            <p class="form-description">Для відновлення пароля введіть email адресу на який повинно прийти посилання</p>
+            <div class="input-wrap">
+                <label class="input-title">Email</label>
+                <input type="text" name="log" placeholder="Введіть email" class="form-input">
+            </div>
+            <div class="submit">
+                <input type="submit" class="form-submit submit" value="Відновити" id="BtnNewPass">
+                <span class="form-submit underline register " id="btnOldPass">Згадав пароль</span>
+            </div>
+        </form>
+        <form action="" class="form-popup sendPass" id="sendNewPass">
+
+                <p class="form-title">Відновлення пароля</p>
+                <p class="form-description sendFull">Дякуємо, на вашу електронну адресу було надіслано новий пароль</p>
+                <p class="new-pass sendEntrance" id="btnNewPassClose">до входу</p>
+            </form>
+    </div>
+
+    <div id="screen">
+
+        <div class="container">
+
+
+
+            <header class="main-header">
+                <div class="header-left">
+                    <img src="img/logo.svg" alt="Adsaver">
+                </div>
+                <div class="header-right">
+                    <div class="user">
+                        <img src="img/user.svg" alt="user">
+                        <span id="log">Увійти в кабінет</span>
+                    </div>
+
+                    <ul class="lang switch-lang">
+                        <li class="active">Укр</li>
+                        <li>Рус</li>
+                    </ul>
+
+                </div>
+            </header>
+            <main class="front-main">
+                <div class="main-wrap">
+                    <h1 class="h1">Аналитика поведения клиента на сайте</h1>
+                    <div class="cub"></div>
+                </div>
+            </main>
+            <footer class="main-footer"></footer>
+        </div>
+        
+</body>
+
+</html>

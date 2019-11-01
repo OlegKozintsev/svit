@@ -1,0 +1,231 @@
+// Popup
+
+.popup {
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    background-color: $graylight;
+    min-width: 60rem;
+    min-height: 49.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 7px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 1.5rem;
+    opacity: 0;
+    z-index: -20;
+    position: absolute;
+   
+}
+
+
+.wrapBlur {
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    opacity: 0;
+    z-index: -20;
+    position: absolute;
+
+}
+
+.popup-wrap {
+
+    min-height: 34.9rem;
+    
+
+}
+
+.form-popup {
+
+opacity: 0;
+z-index: -20;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translateX(-50%) translateY(-50%);
+
+}
+
+.form-popup.show {
+    position: relative;
+    transform:translateX(0) translateY(0);
+    top:0;
+    left:0;
+}
+
+.close {
+    position: absolute;
+    right: 1.6rem;
+    top: 1.6rem;
+    cursor: pointer;
+}
+
+.form-title {
+
+    font-family: $rr;
+    font-weight: 500;
+    font-size: $f36;
+    line-height: $l32;
+    color: $bluLight;
+    margin-bottom: 3.2rem;
+}
+
+.input-title {
+
+    font-family: $rr;
+    font-size: $f14;
+    line-height: $l16;
+    display: block;
+    color: $bluLight;
+    margin-bottom: 1.1rem;
+    padding-left: 1.8rem;
+}
+
+.input-wrap {
+    margin-bottom: 2.4rem;
+}
+
+.form-input {
+    border: 0.1rem solid $bluLight;
+    border-radius: 0.6rem;
+    width: 100%;
+    height: 4.2rem;
+    padding-left: 1.8rem;
+    font-family: $rr;
+    font-size: $f14;
+    line-height: $l16;
+    color: $gray;
+    max-width: 33.5rem;
+}
+
+.form-input::placeholder {
+
+    font-family: $rr;
+    font-size: $f14;
+    line-height: $l16;
+    color: $gray;
+}
+
+
+.form-input:focus {
+    outline: none;
+    
+}
+
+.form-submit {
+
+    background-color: $bluLight;
+    border-radius: 0.6rem;
+    font-family: $rr;
+    font-size: $f16;
+    line-height: $l19;
+    text-align: center;
+    color: $white;
+    padding: 1.1rem 5.1rem;
+    cursor: pointer;
+    border: none;
+    margin-top: 0.8rem;
+}
+
+.error {
+    font-family: $rr;
+    font-size: $f14;
+    line-height: $l16;
+    color: $red;
+    position: relative;
+    top:1rem;
+}
+
+.new-pass {
+    font-family: $rr;
+    font-size: $f14;
+    line-height: $f16;
+    color: $gray;
+    text-align:center;
+    margin-top: 6.2rem;
+    cursor: pointer;
+}
+
+
+.form-description {
+
+font-family: $rr;
+font-size: $f14;
+line-height: $l16;
+text-align: center;
+color: $bluLight;
+margin:0 auto;
+max-width: 30.7rem;
+margin-bottom:3.2rem;
+}
+
+
+.sendFull{
+
+    font-size: $f24;
+    line-height: $l28;
+    text-align: center;
+    color: $green;
+
+}
+
+.sendEntrance {
+
+font-size: $f16;
+line-height: $l19;
+color: $bluLight;
+}
+
+
+
+.register {
+
+    background-color: transparent;
+    color: $bluLight;
+    margin-left: 2.3rem;
+    padding-left:0;
+    padding-right:0;
+    position: relative;
+   
+}
+
+.underline:after {
+    content:"";
+    width: 100%;
+    height: 0.1rem;
+    opacity:0;
+    background-color: $bluLight;
+    position: absolute;
+    left:0;
+    bottom:0rem;
+    transform:translateY(0rem);
+
+
+}
+
+.underline:hover:after {
+    content:"";
+    width: 100%;
+    opacity:1;
+    height: 0.1rem;
+    background-color: $bluLight;
+    position: absolute;
+    left:0;
+    bottom:0rem;
+    transform:translateY(-1.1rem);
+    transition:opacity 500ms ease, transform 500ms ease;
+
+}
+
+.show {
+    opacity: 1;
+    z-index: 100;
+    
+}
+
+

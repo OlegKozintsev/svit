@@ -1,0 +1,58 @@
+// Components
+
+
+.user {
+
+    display: flex;
+    align-items: center;
+    cursor:pointer;
+
+    span {
+        font-family: "Montserrat-Medium";
+        font-size: $f14;
+        line-height: $l17;
+        color:$white;
+    }
+
+    img {
+        margin-right:0.7rem;
+    }
+
+  
+
+}
+
+.switch-lang {
+    display: inline-flex;
+    
+
+    li {
+        font-family: "Montserrat-Medium";
+        font-size: $f12;
+        line-height: $l15;
+        color:$white;
+        width:3.2rem;
+        height:3.2rem;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        border-radius: 50%;
+        cursor:pointer;
+    }
+
+    .active {
+        background-color:$redlight;
+    }
+}
+
+
+
+.h1 {
+font-family: "Montserrat-Medium";
+font-weight: 500;
+font-size: $f40;
+line-height: $l49;
+text-transform: uppercase;
+max-width: 44.2rem;
+color:$white;
+}
